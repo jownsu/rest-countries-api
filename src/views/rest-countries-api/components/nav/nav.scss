@@ -1,0 +1,59 @@
+@import "../../../../assets/sass/variables";
+
+nav{
+    background: $color_white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+    ._container{
+        align-items: center;
+        display: flex;
+        height: 80px;
+        justify-content: space-between;
+    }
+
+    h3{
+        font: 800 24px/32.74px $font_primary;
+
+        @media only screen and (max-width: $bp_sm) {
+            font-size: 14px;
+        }
+    }
+
+    button {
+        align-items: center;
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        font: 600 16px/0px $font_primary;
+        gap: 10px;
+        outline: none;
+
+        @media only screen and (max-width: $bp_sm) {
+            font-size: 12px;
+        }
+        span{
+            background-image: url("./images/moon.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 20px;
+            width: 20px;
+        }
+    }
+}
+
+.dark{
+    nav{
+        background: #2B3844;
+
+        h3{
+            color: $color_white;
+        }
+
+        button{
+            color: $color_white;
+            span{
+                background-image: url("./images/moon_dark.svg");
+            }
+        }
+    }
+}
