@@ -23,7 +23,7 @@
         width: 480px;
 
         span{
-            background-image: url("images/search.svg");
+            background-image: url("/images/search.svg");
             height: 18px;
             left: 30px;
             position: absolute;
@@ -63,7 +63,7 @@
 
             .arrow-closed,
             .arrow-open{
-                background-image: url("images/arrow.svg");
+                background-image: url("/images/arrow.svg");
                 background-position: center;
                 background-repeat: no-repeat;
                 display: block;
@@ -114,7 +114,7 @@
     .input_group{
         background: $color_dark_1;
         span{
-            background-image: url("images/search_dark.svg");
+            background-image: url("/images/search_dark.svg");
         }
         input{
             background: $color_dark_1;
@@ -134,7 +134,7 @@
             }
             .arrow-closed,
             .arrow-open{
-                background-image: url("images/arrow_dark.svg");
+                background-image: url("/images/arrow_dark.svg");
             }
         }
         .Dropdown-menu{
