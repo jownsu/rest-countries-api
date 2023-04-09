@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./flag_card.scss";
 
 
@@ -6,7 +7,7 @@ function FlagCard({country}) {
 
 
     return (
-        <div className="flag_card">
+        <Link to={`country/${country.cca2}`} className="flag_card">
             <img src={country.flags.png} alt={country.flags.alt} />
             <div>
                 <h4>{country.name.common}</h4>
@@ -23,7 +24,7 @@ function FlagCard({country}) {
                     <span> {country.capital}</span>
                 </p>
             </div>
-        </div>
+        </Link>
     )
 }
 

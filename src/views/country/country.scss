@@ -1,0 +1,160 @@
+@import "../../assets/sass/variables";
+
+.country{
+    padding: 76px 0;
+
+    @media only screen and (max-width: $bp-sm){
+        padding-top: 42px;
+    }
+    a{
+        align-items: center;
+        background: none;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        font: 300 16px/20px $font_primary;
+        gap: 10px;
+        height: 40px;
+        justify-content: center;
+        outline: none;
+        text-decoration: none;
+        width: 136px;
+
+        @media only screen and (max-width: $bp-md) {
+            box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
+        }
+
+        span{
+            background-image: url("/images/back.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            display: block;
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    .country_main{
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: space-between;
+        margin-top: 75px;
+        @media only screen and (max-width: $bp-sm){
+            margin-top: 65px;
+        }
+        img{
+            border-radius: 10px;
+            height: auto;
+            max-width: 560px;
+            object-fit: contain;
+            width: 100%;
+        }
+        > div{
+            width: 575px;
+
+            @media only screen and (max-width: $bp_md) {
+                margin: initial;
+            }
+
+            h3{
+                font: 800 32px/43.65px $font_primary;
+                margin-bottom: 20px;
+                @media only screen and (max-width: $bp-sm){
+                    margin-bottom: 15px;
+                }
+            }
+
+            .country_info{
+                column-gap: 20px;
+                display: flex;
+                
+                @media only screen and (max-width: $bp_md) {
+                    flex-direction: column;
+                }
+
+                >div{
+                    flex: 1;
+                }
+
+
+                p{
+                    font: 600 16px/32px $font_primary;
+                    span{
+                        font-weight: 300;
+                    }
+
+                    @media only screen and (max-width: $bp_md) {
+                        &:nth-of-type(6){
+                            margin-top: 33px;
+                        }
+                    }
+                    
+                }
+            }
+
+            .country_borders{
+                align-items: center;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 60px;
+                row-gap: 10px;
+
+                @media only screen and (max-width: $bp-sm){
+                    margin-top: 35px;
+                    row-gap: 18px;
+                }
+
+                p{
+                    font: 600 16px/24px $font_primary;
+                    margin-right: 16px;
+                }
+                >div{
+                    display: flex;
+                    flex-wrap: wrap;
+                    row-gap: 10px;
+                    a{
+                        border-radius: 2px;
+                        box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.104931);
+                        color: $text_black;
+                        display: block;
+                        display: grid;
+                        font: 300 14px/19.1px $font_primary;
+                        height: 28px;
+                        margin-right: 10px;
+                        min-width: 96px;
+                        padding: 0 20px;
+                        place-items: center;
+                        text-decoration: none;
+                        width: fit-content;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dark{
+    .country{
+        a{
+            background: $color_dark_1;
+            color: $color_white;
+            span{
+                background-image: url("/images/back_dark.svg");
+            }
+        }
+        .country_main{
+            .country_borders{
+                >div{
+                    a{
+                        background: $color_dark_1;
+                        color: $color_white;
+                    }
+                }
+            }
+
+        }
+    }
+}

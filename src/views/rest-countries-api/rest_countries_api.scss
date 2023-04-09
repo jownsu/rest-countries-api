@@ -3,8 +3,8 @@
 .header_container{
     align-items: center;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
     row-gap: 40px;
 
     &._container{
@@ -12,30 +12,29 @@
     }
 
     .input_group{
-        display: flex;
         align-items: center;
-        height: 56px;
-        width: 480px;
-        position: relative;
-        padding-right: 20px;
-        box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
         background: $color_white;
         border-radius: 5px;
+        box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+        display: flex;
+        height: 56px;
+        padding-right: 20px;
+        position: relative;
+        width: 480px;
 
         span{
+            background-image: url("images/search.svg");
             height: 18px;
-            width: 18px;
-            background-image: url("./images/search.svg");
-            position: absolute;
             left: 30px;
+            position: absolute;
+            width: 18px;
         }
         input{
-            font: 400 14px/20px $font_primary;
             border: none;
+            font: 400 14px/20px $font_primary;
+            margin-left: 70px;
             outline: none;
             width: 100%;
-            margin-left: 70px;
-            
             
             &::placeholder{
                 color: #848484;
@@ -46,17 +45,17 @@
     .filter_dropdown{
 
         .Dropdown-control{
-            padding-left: 24px;
-            width: 200px;
-            height: 56px;
-            display: flex;
             align-items: center;
-            border: none;
-            font: 400 14px/20px $font_primary;
-            box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
             border-radius: 5px;
+            border: none;
+            box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
             cursor: pointer;
+            display: flex;
+            font: 400 14px/20px $font_primary;
+            height: 56px;
+            padding-left: 24px;
             transition: none;
+            width: 200px;
 
             .Dropdown-placeholder{
                 color: $text_black;
@@ -64,7 +63,7 @@
 
             .arrow-closed,
             .arrow-open{
-                background-image: url("./images/arrow.svg");
+                background-image: url("images/arrow.svg");
                 background-position: center;
                 background-repeat: no-repeat;
                 display: block;
@@ -73,8 +72,8 @@
                 right: 20px;
                 top: 50%;
                 transform: translateY(-50%);
-                width: 10px;
                 transition: transform .2s;
+                width: 10px;
             }
 
             .arrow-open{
@@ -83,11 +82,11 @@
         }
 
         .Dropdown-menu{
-            border: none;
-            top: 110%;
-            box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
             border-radius: 5px;
+            border: none;
+            box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
             font: 400 14px/20px $font_primary;
+            top: 110%;
 
             .Dropdown-option{
                 color: #111517;
@@ -115,7 +114,7 @@
     .input_group{
         background: $color_dark_1;
         span{
-            background-image: url("./images/search_dark.svg");
+            background-image: url("images/search_dark.svg");
         }
         input{
             background: $color_dark_1;
@@ -135,7 +134,7 @@
             }
             .arrow-closed,
             .arrow-open{
-                background-image: url("./images/arrow_dark.svg");
+                background-image: url("images/arrow_dark.svg");
             }
         }
         .Dropdown-menu{

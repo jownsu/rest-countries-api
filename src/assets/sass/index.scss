@@ -20,13 +20,15 @@ body{
     color: $text_black;
     font-family: $font_primary;
 
-    & .dark{
+    &.dark{
         background: #202C36;
+        color: $color_white;
     }
 }
+
 
 ._container {
     margin: 0 auto;
     max-width: $bp_lg;
-    width: 90%;
+    width: 85%;
 }

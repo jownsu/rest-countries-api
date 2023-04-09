@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import "./nav.scss";
 
 function Nav({onDarkModeClick = () => {}}) {
     return ( 
         <nav>
             <div className="_container">
-                <h3>Where in the world?</h3>
+                <Link to="/">Where in the world?</Link>
                 <button 
                     type="button"
                     onClick={onDarkModeClick}

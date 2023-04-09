@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import useCountry from "../../hooks/useCountry";
 
 /* Components */
-import Nav from "./components/nav/nav";
 import FlagCard from "./components/flag_card/flag_card";
 
 /* Plugins */
@@ -17,7 +16,6 @@ const FILTER_OPTIONS = ["Africa", "America", "Asia", "Europe", "Oceania"];
 
 function RestCountriesApi() {
 
-    const [is_dark_mode, setIsDarkMode] = useState(false);
     const { getCountries, getCountriesByRegion, getCountriesByName, countries } = useCountry();
 
     useEffect(() => {
@@ -36,9 +34,7 @@ function RestCountriesApi() {
     };
 
     return (
-        <div className={`${is_dark_mode && "dark"}`}>
-            <Nav onDarkModeClick={() => setIsDarkMode(prevState => !prevState)} />
-
+        <>
             <div className="header_container _container">
                 <div className="input_group">
                     <span></span>
@@ -57,11 +53,10 @@ function RestCountriesApi() {
                     arrowOpen={<span className="arrow-open" />}
                 />
             </div>
-
             <div className="flags_container _container">
                 {countries.map(country =>  <FlagCard country={country} />)}
             </div>
-        </div>
+        </>
     )
 }
 
