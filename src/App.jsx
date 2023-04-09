@@ -29,15 +29,13 @@ function App() {
     }
 
     return (
-        <div>
-            <Router>
-                <Nav onDarkModeClick={toggleDarkMode} />
-                <Routes>
-                    <Route exact path="/" element={<RestCountriesApi />} />
-                    <Route exact path="/country/:country_id" element={<Country />} />
-                </Routes>
-            </Router>
-        </div>
+        <Router>
+            <Nav onDarkModeClick={toggleDarkMode} />
+            <Routes>
+                <Route exact path="/" element={<RestCountriesApi />} />
+                <Route exact path="/country/:country_id" element={<Country />} />
+            </Routes>
+        </Router>
     );
 }
 

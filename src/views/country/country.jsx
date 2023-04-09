@@ -22,7 +22,7 @@ function Country() {
             <div className="country_main">
                 <img src={country?.flag} alt={country?.alt} />
                 <div>
-                    <h3>{country?.name}</h3>
+                    <p className="country_name">{country?.name}</p>
                     <div className="country_info">
                         <div>
                             <p>Native Name: <span>{country?.native_name}</span></p>

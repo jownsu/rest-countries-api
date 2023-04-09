@@ -35,7 +35,7 @@ function RestCountriesApi() {
 
     return (
         <>
-            <div className="header_container _container">
+            <header className="header_container _container">
                 <div className="input_group">
                     <span></span>
                     <input 
@@ -52,10 +52,10 @@ function RestCountriesApi() {
                     arrowClosed={<span className="arrow-closed" />}
                     arrowOpen={<span className="arrow-open" />}
                 />
-            </div>
-            <div className="flags_container _container">
+            </header>
+            <main className="flags_container _container">
                 {countries.map((country, index) =>  <FlagCard key={index} country={country} />)}
-            </div>
+            </main>
         </>
     )
 }

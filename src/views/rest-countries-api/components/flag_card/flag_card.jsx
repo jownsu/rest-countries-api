@@ -10,7 +10,7 @@ function FlagCard({country}) {
         <Link to={`country/${country.cca2}`} className="flag_card">
             <img src={country.flags.png} alt={`flag of ${country.name.common}`} />
             <div>
-                <h4>{country.name.common}</h4>
+                <p className="country_name">{country.name.common}</p>
                 <p>
                     Population:
                     <span> {country.population}</span>
