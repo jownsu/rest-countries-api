@@ -54,7 +54,7 @@ function RestCountriesApi() {
                 />
             </div>
             <div className="flags_container _container">
-                {countries.map(country =>  <FlagCard country={country} />)}
+                {countries.map((country, index) =>  <FlagCard key={index} country={country} />)}
             </div>
         </>
     )
