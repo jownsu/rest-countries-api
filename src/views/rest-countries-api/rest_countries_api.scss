@@ -105,7 +105,7 @@
 .flags_container{
     display: grid;
     gap: 75px;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-items: center;
     padding-bottom: 50px;
 }
