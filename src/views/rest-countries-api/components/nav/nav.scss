@@ -11,12 +11,14 @@ nav{
     }
 
     a{
-        color: $text_black;
-        font: 800 24px/32.74px $font_primary;
         text-decoration: none;
-
-        @media only screen and (max-width: $bp_sm) {
-            font-size: 14px;
+        h1{
+            color: $text_black;
+            font: 800 24px/32.74px $font_primary;
+    
+            @media only screen and (max-width: $bp_sm) {
+                font-size: 14px;
+            }
         }
     }
 
@@ -48,7 +50,9 @@ nav{
         background: #2B3844;
 
         a{
-            color: $color_white;
+            h1{
+                color: $color_white;
+            }
         }
 
         button{

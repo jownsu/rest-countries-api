@@ -5,7 +5,7 @@ function Nav({onDarkModeClick = () => {}}) {
     return ( 
         <nav>
             <div className="_container">
-                <Link to="/">Where in the world?</Link>
+                <Link to="/"><h1>Where in the world?</h1></Link>
                 <button 
                     type="button"
                     onClick={onDarkModeClick}
