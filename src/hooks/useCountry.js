@@ -28,7 +28,7 @@ function useCountry() {
                 setCountry({
                     name             : data.name.common,
                     flag             : data.flags.png,
-                    alt              : data.flags.alt,
+                    alt              : `flag of ${data.name.common}`,
                     native_name      : Object.values(data.name.nativeName)[0].common,
                     population       : data.population,
                     region           : data.region,

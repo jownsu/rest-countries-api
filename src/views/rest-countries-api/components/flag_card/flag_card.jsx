@@ -8,7 +8,7 @@ function FlagCard({country}) {
 
     return (
         <Link to={`country/${country.cca2}`} className="flag_card">
-            <img src={country.flags.png} alt={country.flags.alt} />
+            <img src={country.flags.png} alt={`flag of ${country.name.common}`} />
             <div>
                 <h4>{country.name.common}</h4>
                 <p>
